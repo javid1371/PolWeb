@@ -1,0 +1,9 @@
+---
+description: مرز الگو، قالب، parts و بلوک
+globs: themes/**/patterns/**,themes/**/templates/**,themes/**/parts/**,themes/**/blocks/**,plugins/**/blocks/**
+alwaysApply: false
+---
+
+در این موج فقط `templates/index.html` و parts سربرگ و پابرگ وجود دارد. الگو، بلوک اختصاصی و صفحهٔ نمایش اجزا نساز.
+
+سربرگ و پابرگ فقط نام سایت و یک جملهٔ جای‌نگهدار فارسی دارند. منو و اطلاعات تماس ساختگی نگذار. الگوی راه دور بارگذاری نمی‌شود.

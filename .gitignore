@@ -1,0 +1,24 @@
+# وابستگی و خروجی ساخت
+/node_modules/
+/vendor/
+/dist/
+
+# هسته و محیط محلی وردپرس
+/.wp-env/
+/wordpress/
+/wp-admin/
+/wp-includes/
+/wp-content/
+
+# بارگذاری‌ها
+/uploads/
+**/uploads/
+
+# کش ابزار
+.phpunit.cache/
+.phpcs.cache
+/composer.phar
+
+# سیستم
+.DS_Store
+*.log

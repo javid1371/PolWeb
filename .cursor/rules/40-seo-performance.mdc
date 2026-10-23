@@ -1,0 +1,11 @@
+---
+description: مالکیت سئو و بودجهٔ عملکرد
+globs: docs/SEO.md,docs/PERFORMANCE.md,themes/**/*.html
+alwaysApply: false
+---
+
+افزونهٔ The SEO Framework مالک title، meta description، canonical، robots، sitemap، Open Graph و structured data است. قالب این‌ها را تولید نمی‌کند و BreadcrumbList نمی‌سازد.
+
+قالب فقط H1، سلسله‌مراتب و لینک HTML را مالک است. جست‌وجوی داخلی noindex است و جایش robots.txt نیست.
+
+بودجهٔ داخلی در `docs/PERFORMANCE.md` است و استاندارد گوگل نیست. بدون اندازهٔ صفحهٔ واقعی نتیجه را pass ننویس.
