@@ -30,11 +30,11 @@ POLWEB-001
 
 ## وضعیت
 
-Review
+Done
 
 ## نتیجهٔ تست
 
-PHPUnit در POLWEB-004 اجرا می‌شود. فعال‌سازی وردپرس تا بودن Docker blocked می‌ماند.
+`npm run test` برابر pass، سه آزمون، PHP CLI `8.3.6`. فعال‌سازی روی همین ماشین blocked است. job یکپارچهٔ GitHub Actions برابر pass است.
 
 ## لینک شواهد
 

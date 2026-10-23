@@ -30,11 +30,11 @@ SHA تأییدنشده نباید با برچسب major عوض شود. اگر SH
 
 ## وضعیت
 
-In progress
+Done
 
 ## نتیجهٔ تست
 
-هنوز در شواهد ثبت نشده است.
+محلی: lint و test و package برابر pass. `check:integration` برابر blocked با کد خروج ۲. در GitHub Actions هر دو job، از جمله فعال‌سازی wp-env، success شدند. PHP آزمون محلی `8.3.6` و PHP همان job برابر `8.4.27` بود.
 
 ## لینک شواهد
 

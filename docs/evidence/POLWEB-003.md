@@ -6,6 +6,8 @@
 
 منطق نسخه در کلاس `Pol_Site_Core_Schema_Version` است و از توابع قالب جداست. مهاجرت نوشته نشده است.
 
-فعال‌سازی واقعی وردپرس: blocked. دیمون Docker بالا نیست. این نتیجه fail یا pass نیست. جزئیات در `docs/adr/0007-runtime-environment.md`.
+فعال‌سازی روی همین ماشین: blocked. دیمون Docker بالا نیست. این نتیجهٔ محلی fail یا pass نیست. جزئیات محیط در `docs/adr/0007-runtime-environment.md`.
 
-خروجی PHPUnit بعد از اجرای POLWEB-004 در `docs/evidence/POLWEB-004.md` ثبت می‌شود.
+همان بررسی در GitHub Actions، اجرای `39957975615`، برابر pass شد: قالب `pol-magnetic` فعال شد و هر دو افزونه به‌همراه The SEO Framework فعال بودند.
+
+`npm run test` در ۲۳ اکتبر ۲۰۲۶ کد خروج ۰ داد: PHPUnit `12.5.40`، سه آزمون و نه assertion، روی PHP CLI `8.3.6`. این اجرا روی PHP `8.4` نبود.

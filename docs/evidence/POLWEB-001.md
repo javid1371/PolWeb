@@ -9,4 +9,6 @@
 - `blog_public` گزینهٔ wp-config نیست. lifecycle به `tools/wp-env-after-start.sh` وصل است. این گزینه بی‌صدا حذف نشده است.
 - Node `22.23.3` در فهرست رسمی Node در تاریخ `2026-09-23` وجود دارد. ماشین فعلی `v22.23.4` است.
 
-قفل‌ها با نصب ابزار در POLWEB-004 commit می‌شوند.
+`package-lock.json` نسخهٔ `@wordpress/env` را روی `12.0.0` قفل کرده است. `composer.lock` ابزارها را روی همان شماره‌های ADR ۰۰۰۲ قفل کرده است.
+
+تجزیهٔ `.wp-env.json` با همین نسخه: PHP `8.4`، MariaDB `11.4`، پورت `8888`، افزونه‌ها `pol-site-core` و `pol-demo` و `autodescription`، قالب `pol-magnetic`، و `afterStart` برابر `sh tools/wp-env-after-start.sh`. نام پوشهٔ کش هسته در این نسخه به `wordpress-7` کوتاه می‌شود، ولی URL دانلود همان `wordpress-7.1.3.zip` می‌ماند.

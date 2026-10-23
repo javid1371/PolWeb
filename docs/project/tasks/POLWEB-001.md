@@ -30,11 +30,11 @@
 
 ## وضعیت
 
-Review
+Done
 
 ## نتیجهٔ تست
 
-قفل وابستگی در POLWEB-004 ساخته و اجرا می‌شود.
+`package-lock.json` و `composer.lock` ساخته شدند. اجرای lint در POLWEB-004 برابر pass است.
 
 ## لینک شواهد
 

@@ -4,19 +4,19 @@
 
 | کار | وضعیت |
 | --- | --- |
-| POLWEB-001 | Review |
-| POLWEB-002 | Review |
-| POLWEB-003 | Review |
-| POLWEB-004 | In progress |
+| POLWEB-001 | Done |
+| POLWEB-002 | Done |
+| POLWEB-003 | Done |
+| POLWEB-004 | Done |
 | POLWEB-005 تا POLWEB-010 | Backlog |
 
-کار In progress فقط POLWEB-004 است. اجرای ثبت‌شدهٔ lint و test و package هنوز در شواهد این کار نوشته نشده است.
+کار In progress وجود ندارد.
 
 ## مانع wp-env
 
 دلیل: در ۲۳ اکتبر ۲۰۲۶ دیمون Docker بالا نیامد. باینری `docker` نیست، `/var/run/docker.sock` نیست، و systemd در این ماشین PID 1 نیست.
 
-اثر: فعال‌سازی قالب و افزونه روی نصب تمیز وردپرس اجرا نشده است. این مورد blocked است، نه pass و نه fail.
+اثر روی همین ماشین: فعال‌سازی وردپرس اجرا نشده و blocked است، نه pass و نه fail. در GitHub Actions همان فرمان pass شده است. جزئیات در `docs/evidence/POLWEB-004.md`.
 
 فرمان رفع، بعد از در دسترس بودن دیمون Docker:
 
@@ -25,6 +25,15 @@ npm ci
 npm run check:integration
 ```
 
+## نتیجهٔ فرمان‌ها در ۲۳ اکتبر ۲۰۲۶
+
+| فرمان | کد خروج | نتیجه |
+| --- | --- | --- |
+| `npm run lint` | ۰ | pass |
+| `npm run test` | ۰ | pass روی PHP CLI `8.3.6`، نه روی PHP `8.4` |
+| `npm run package` | ۰ | pass |
+| `npm run check:integration` | ۲ | blocked |
+
 ## قدم بعدی
 
-تا وقتی POLWEB-004 بسته نشده، قدم بعدی بستن همین کار است. بعد از آن قدم بعدی دقیقاً POLWEB-005 است.
+POLWEB-005
