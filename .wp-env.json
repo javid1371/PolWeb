@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/wp-env.json",
+  "core": "https://downloads.wordpress.org/release/wordpress-7.1.3.zip",
+  "phpVersion": "8.4",
+  "mariadbVersion": "11.4",
+  "port": 8888,
+  "testsEnvironment": false,
+  "themes": [
+    "./themes/pol-magnetic"
+  ],
+  "plugins": [
+    "./plugins/pol-site-core",
+    "./plugins/pol-demo",
+    "https://downloads.wordpress.org/plugin/autodescription.5.2.0.zip"
+  ],
+  "config": {
+    "WP_ENVIRONMENT_TYPE": "local"
+  },
+  "lifecycleScripts": {
+    "afterStart": "sh tools/wp-env-after-start.sh"
+  }
+}

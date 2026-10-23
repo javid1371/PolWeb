@@ -1,0 +1,13 @@
+---
+description: قواعد وردپرس برای PHP و HTML و JSON قالب و افزونه
+globs: themes/**/*.php,plugins/**/*.php,themes/**/*.html,plugins/**/*.html,themes/**/*.json,plugins/**/*.json
+alwaysApply: false
+---
+
+قالب Block Theme است و افزونهٔ هسته منطق سایت را جدا از قالب نگه می‌دارد. سازگاری اعلام‌شده وردپرس ۷.۱.۳ و PHP ۸.۴ است.
+
+- دامنهٔ متن قالب `pol-magnetic` و افزونهٔ هسته `pol-site-core` است.
+- `should_load_remote_block_patterns` باید false بماند.
+- در این موج نوع محتوا، فرم، REST، متا و بلوک اختصاصی نساز.
+- خروجی را escape کن. secret در کد نگذار.
+- غیرفعال‌سازی `pol-site-core` دادهٔ `pol_site_core_schema_version` را پاک نمی‌کند.

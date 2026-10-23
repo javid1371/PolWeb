@@ -1,0 +1,12 @@
+---
+description: مرز سیستم طراحی برای CSS و theme.json و assets
+globs: themes/**/*.css,themes/**/theme.json,themes/**/assets/**
+alwaysApply: false
+---
+
+سیستم طراحی Magnetic Focus مال این موج نیست. پالت فعلی جای‌نگهدار است و در `docs/DESIGN-SYSTEM.md` با «جایگزین می‌شود» مشخص شده است.
+
+- فونت، از جمله Vazirmatn، در این موج اضافه نمی‌شود.
+- `appearanceTools` باز نماند. رنگ و فاصله و شعاع سفارشی خام خاموش بماند.
+- CSS آزاد برای سفارشی‌سازی ننویس. فایل CSS یا JS جدا نساز.
+- عرض محتوا و عریض فقط همان دو مقدار `theme.json` است.

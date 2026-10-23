@@ -1,0 +1,67 @@
+# SHAها از git tag رسمی همان انتشار در ۲۰۲۶-۱۰-۲۳ خوانده شده‌اند، نه از برچسب شناور.
+# actions/checkout v7.0.1 → 3d3c42e5aac5ba805825da76410c181273ba90b1
+# actions/setup-node v7.1.0 → 949feb2413d6458794dcd2491c4babbbce0c15c1
+# shivammathur/setup-php 2.40.0 → eb7c497e18156a6bbabfef1d3a82760b9eda3962
+name: ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    name: lint test package
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version: 22.23.3
+          cache: npm
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962
+        with:
+          php-version: "8.4"
+          coverage: none
+          tools: composer:2.10.3
+
+      - name: Install PHP tools
+        run: composer install --no-interaction --no-progress --prefer-dist
+
+      - name: Install Node tools
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Test
+        run: npm run test
+
+      - name: Package
+        run: npm run package
+
+  integration:
+    name: wp-env activation
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version: 22.23.3
+          cache: npm
+
+      - name: Install Node tools
+        run: npm ci
+
+      - name: Activate on a clean install
+        run: npm run check:integration

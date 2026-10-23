@@ -1,0 +1,12 @@
+---
+description: آزمون، CI و اسکریپت‌های کیفیت
+globs: plugins/**/tests/**,.github/workflows/**,tools/**,phpcs.xml.dist,phpunit.xml.dist
+alwaysApply: false
+---
+
+این قاعده جای `npm run lint` و `npm run test` و `npm run check:integration` و CI نیست. همان فرمان‌ها معیارند.
+
+- ابزار غایب خروج غیر صفر و عبارت not-run دارد.
+- نبود Docker یا wp-env برای یکپارچگی خروج ۲ و عبارت blocked است، نه pass و نه fail.
+- ZIP انتشار افزونهٔ demo و tests و node_modules را شامل نمی‌شود.
+- secret و اتصال فرم واقعی و ارسال به سرویس خارجی ممنوع است.
