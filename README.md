@@ -33,4 +33,4 @@ npm run check:integration
 - Docker نصب نیست، `/var/run/docker.sock` وجود ندارد، و `systemctl` بالا نمی‌آید. wp-env محلی blocked است.
 - جزئیات و فرمان رفع مانع در `docs/project/STATUS.md` و `docs/adr/0007-runtime-environment.md`.
 
-قدم بعدی: POLWEB-005.
+قدم بعدی: POLWEB-005. نقشهٔ اجرا: `docs/project/PLAN.md`.

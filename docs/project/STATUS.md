@@ -36,4 +36,4 @@ npm run check:integration
 
 ## قدم بعدی
 
-POLWEB-005
+POLWEB-005. نقشهٔ اجرا در `docs/project/PLAN.md`. وضعیت کار هنوز Backlog است و تا Ready شدن ساخته نمی‌شود.
