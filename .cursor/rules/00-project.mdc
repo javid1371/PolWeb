@@ -4,7 +4,7 @@ alwaysApply: true
 
 موج فعلی مرحلهٔ صفر است: مخزن، پین، قواعد، اسکریپت کیفیت، قالب و افزونهٔ قابل فعال‌سازی. کار بعدی بعد از تمام شدن این موج فقط POLWEB-005 است.
 
-این مخزن CRM نیست. مسیر سندها: `docs/PROJECT.md`، `docs/ARCHITECTURE.md`، `docs/project/STATUS.md`، سپس ADRهای `docs/adr/`.
+این مخزن CRM نیست. مسیر سندها: `docs/PROJECT.md`، `docs/ARCHITECTURE.md`، `docs/project/STATUS.md`، `docs/project/PLAN.md`، سپس ADRهای `docs/adr/`.
 
 اصول غیرقابل‌مذاکره:
 
